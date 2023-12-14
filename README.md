@@ -11,6 +11,7 @@ This is a flask based web app for a Flashcard and Vocabulary learning applicatio
 - SQLite for storing data in databases
 
 ## Video walkthrough 
+https://www.youtube.com/watch?v=hd8jmXESIeY 
 
 # Usage Instructions
 - All required dependencies to run the app are in 'requirements.txt'
@@ -22,22 +23,3 @@ This is a flask based web app for a Flashcard and Vocabulary learning applicatio
 - The API I used for fetching word definitions is from the freeDictionaryAPI github project (https://github.com/meetDeveloper/freeDictionaryAPI).
 - The Dataset for preset words I used is from Kaggle (https://www.kaggle.com/datasets/sarthakvajpayee/gre-high-frequency-vocabulary-word-lists/). This has multiple files which can be used but for the purpose of demonstation I have only used one, the file called 'barron_333.csv' (https://www.kaggle.com/datasets/sarthakvajpayee/gre-high-frequency-vocabulary-word-lists/?select=barron_333.csv).
 - I took inspiration from CS50's Week 9 material for certain frontend and flask concepts.
-
-# Initial Proposal
-
-I would like to create a web app for a Flashcard / Vocabulary learning application. This could be a dashboard which helps someone improve vocabulary / study for exams like the GRE / learn english from scratch (something like this offered by Manhattan review , but more customizable). This would include
-Signup / Login functionality to serve multiple users. Credentials will be stored in a database
-A “Learn” page where users can go through flashcards randomly one by one. They would be able to choose any specific sets of flashcards, and there would be logic to determine which ones would appear more based on how the user does (they could select each word after it comes with either “knew it” or “didn’t know it”)
-A “Create” page where the user could add a flashcard with any word they want. They can either choose from certain presets of varying difficulty, or they could type in their own words. This would make an API call to a dictionary API and automatically fetch definitions, examples, usage, etc
-All saved/added flashcards would be saved in a database which the user can access at any time. They would be able to add and delete, but also mark them as based on their comfort with those words (learnt, partially learnt, no idea what this means, etc)
-The preset flashcards will be added either using API calls or web scraping using Beautiful Soup.
-
-
-# Initial Execution Plan
-Execution Plan
-- Week 4 - I will have explored web frameworks, dictionary APIs and preset flashcard websites, and hope to finalize the framework and API that I will be using, along with the database schemas.
-- Week 5 - I will have login functionality working with a simple homepage, along with databases set up to store user credentials and flashcard data.
-- Week 6 - I will have functionality to fetch definitions from the API and display the flashcards, as well as setup the data model for a flashcard. I will also have logic setup to mark flashcards as "learnt" or "not learnt" each time they show up.
-- Week 7 - I will have created the basic layout of the entire web app, with ability to create custom flashcards and view/delete saved flashcards, along with the logic to “Learn” (show randomly, with varying frequency)
-- Week 8 (tentative, if everything goes according to schedule) - I will add preset flashcards using APIs or using Beautiful Soup to scrape websites. These will be independent from custom flashcards.
-
