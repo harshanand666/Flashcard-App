@@ -15,6 +15,7 @@ https://www.youtube.com/watch?v=hd8jmXESIeY
 
 # Usage Instructions
 - All required dependencies to run the app are in 'requirements.txt'
+- Use `flask run` to run the app from the root directory
 - Every time the app runs, the 'initialize_db' script runs to create the database, tables and add the preset cards from a preset file. If the database and preset words already exist, it skips this process. If this preset file does not exist, no cards will be added but the application will still run. It is advised to keep the preset file as is in the 'data' folder for complete functionality
 - Currently the code to remove saved sessions on app restart has been implemented by explicitly deleting files in the flask_session directory every time the app boots up. This can be commented out incase that is not desired.
 
